@@ -3,3 +3,6 @@
 .data/
 desktop.ini
 .models/
+.v1/
+.env
+*.db
