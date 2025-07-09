@@ -1,8 +1,8 @@
 .venv/
 *.csv
-.data/
+data/
 desktop.ini
-.models/
-.v1/
+models/
+v1/
 .env
 *.db

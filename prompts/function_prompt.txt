@@ -1,0 +1,16 @@
+Analyze each customer comment thoroughly to extract the following information:
+
+1. Identify up to 3 main themes in each comment. A theme is a specific topic, issue, or aspect of the product/service being discussed.
+
+2. For each theme, determine the sentiment expressed (positive, negative, or neutral).
+
+3. Provide an overall sentiment rating for the entire comment.
+
+Be precise and consistent in your analysis. Focus on extracting factual information from the text rather than making assumptions.
+
+For each comment, return:
+- The main themes identified (up to 3)
+- The sentiment for each theme (positive, negative, or neutral)
+- The overall sentiment of the comment
+
+Do not include any explanations or reasoning in your response, only the structured data requested.
