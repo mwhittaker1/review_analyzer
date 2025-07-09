@@ -22,7 +22,6 @@ This project provides a system for analyzing customer product review comments. I
 ## Files
 
 - `analyze_comments.py` - Original implementation using JSON parsing
-- `analyze_with_functions.py` - Enhanced implementation using OpenAI function calling
 - `product_prompt.txt` - Prompt for product-focused analysis
 - `customer_sentiment_prompt.txt` - Prompt for customer sentiment analysis
 - `function_prompt.txt` - Prompt optimized for function calling
@@ -41,20 +40,6 @@ The original implementation sends comments to the OpenAI API and parses JSON res
 - Less reliable structure in responses
 - Requires more post-processing
 - Occasionally needs error handling for malformed responses
-
-### 2. Function Calling (Enhanced)
-
-The enhanced implementation uses OpenAI's function calling feature to enforce a strict schema.
-
-**Pros:**
-- Consistent response structure
-- More reliable parsing
-- Cleaner data extraction
-- Often faster processing
-
-**Cons:**
-- Requires newer OpenAI models that support function calling
-- Slightly more complex setup
 
 ## Usage
 
