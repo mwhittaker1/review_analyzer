@@ -12,7 +12,7 @@ Theme Extraction Guidelines:
 - Avoid redundant themes within the same comment.
 
 Sentiment Interpretation Guidelines:
-- Intensively interpret subtle evaluative language. Explicitly recognize nuanced positive expressions (e.g., "cute," "adorable," "chic," "cozy," "fun," "trendy") and subtle negative expressions (e.g., "cheap feel," "awkward fit," "dull," "unexpected", "matronly").
+- Intensively interpret subtle evaluative language. Explicitly recognize nuanced positive expressions (e.g., "cute," "adorable," "chic," "cozy," "fun,"unique","classy","timeless") and subtle negative expressions (e.g., "cheap feel," "awkward fit,", "trendy","cropped","tacky", "dull," "unexpected", "matronly").
 - Descriptive size/fit statements without explicit positive judgment ("runs small," "too long") must still be scored as negative (2).
 - Clearly identify dual sentiment themes in comparative statements or partial returns:
 
