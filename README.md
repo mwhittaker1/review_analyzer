@@ -28,7 +28,6 @@ This project provides a system for analyzing customer product review comments. I
 - `analyze_with_functions.py` - Legacy implementation using OpenAI function calling
 - `product_prompt.txt` - Prompt for product-focused analysis
 - `customer_sentiment_prompt.txt` - Prompt for customer sentiment analysis
-- `function_prompt.txt` - Prompt optimized for function calling
 
 ## Pipeline Overview
 
@@ -73,7 +72,6 @@ The current pipeline (as implemented in `sentiment_analyzer.py` and `main.ipynb`
 You can customize the analysis by modifying the prompt files:
 - `product_prompt.txt` - For product-focused analysis
 - `customer_sentiment_prompt.txt` - For customer sentiment analysis
-- `function_prompt.txt` - For function calling implementation
 
 ## Output Format
 
