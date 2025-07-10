@@ -6,3 +6,4 @@ models/
 v1/
 .env
 *.db
+*.xlsx
