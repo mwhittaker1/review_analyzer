@@ -7,3 +7,10 @@ v1/
 .env
 *.db
 *.xlsx
+results/
+failed_product_batch_1.json
+iid_return_comment
+return_comment_group
+sentiment_analysis_checkpoint.json
+sentiment_analysis_run.log
+return_coomment_group

@@ -28,7 +28,7 @@ Output Format:
 Return your evaluation as a single JSON array of objects, each with these keys:
 
   IDENTIFIER – unique ID (e.g., "C1", "C2", …)
-  RETURN_NO – copied from the input
+  row_id – copied from the input
   RETURN_COMMENT – copied from the input
   Theme 1, Sentiment 1
   Theme 2, Sentiment 2 (or empty and 0)
@@ -43,7 +43,7 @@ Example JSON output for two records:
 [
   {
     "IDENTIFIER":"C1",
-    "RETURN_NO":"N001",
+    "row_id":"N001",
     "RETURN_COMMENT":"Dress arrived late and felt underdressed at event.",
     "Theme 1":"Late delivery",
     "Sentiment 1":1,
@@ -59,7 +59,7 @@ Example JSON output for two records:
   },
   {
     "IDENTIFIER":"C2",
-    "RETURN_NO":"N002",
+    "row_id":"N002",
     "RETURN_COMMENT":"Too large but back ruffles visible from front making appearance awkward",
     "Theme 1":"Awkward appearance",
     "Sentiment 1":1,
