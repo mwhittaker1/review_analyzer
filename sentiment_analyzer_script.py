@@ -7,6 +7,10 @@ Sentiment Analyzer Script
 This script replicates the functionality from main.ipynb notebook to perform sentiment
 analysis on return comments using OpenAI's GPT-4o model.
 
+Enhancement: Checks for valid sentiment scores (non-NULL values) when determining which 
+records need analysis, preventing the script from skipping records that exist in the 
+sentiment table but don't have actual sentiment values.
+
 Usage:
     python sentiment_analyzer_script.py [--config CONFIG_FILE]
 """
@@ -192,7 +196,7 @@ def fetch_return_comments(con, tname, is_sample=False, sample_size=500, comment_
     
     # Check if we should skip already analyzed records
     if skip_analyzed:
-        # Check if the sentiment table exists
+        # Always check the final _with_sentiment table for existing analyses
         sentiment_table = f"{tname}_with_sentiment"
         sentiment_exists = con.execute(f"""
             SELECT count(*) 
@@ -212,6 +216,7 @@ def fetch_return_comments(con, tname, is_sample=False, sample_size=500, comment_
                 SELECT 1 
                 FROM {sentiment_table} as sent 
                 WHERE sent.row_id = base.{row_id_column}
+                  AND (sent."Total_sentiment_p" IS NOT NULL OR sent."Total_sentiment_c" IS NOT NULL)
             )
             """
             if is_sample:
