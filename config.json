@@ -1,0 +1,16 @@
+{
+    "file_path": "C:\\Code\\URBN\\review_analyzer\\data\\IID_RR_GROSS.csv",
+    "table_name": "iid_return_reasons",
+    "db_path": "iid_return_comment",
+    "row_id": "row_id",
+    "comment_column": "RETURN_COMMENT",
+    "clear_data": false,
+    "import_data": false,
+    "skip_analyzed": true,
+    "sample": true,
+    "sample_size": 5000,
+    "batch_size": 500,
+    "debug": false,
+    "export_csv": true,
+    "model": "gpt-4o"
+}

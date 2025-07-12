@@ -27,7 +27,6 @@ Scoring System (per theme):
 Output Format:
 Return your evaluation as a single JSON array of objects, each with these keys:
 
-  IDENTIFIER – unique ID (e.g., "C1", "C2", …)
   row_id – copied from the input
   RETURN_COMMENT – copied from the input
   Theme 1, Sentiment 1
@@ -42,7 +41,6 @@ Example JSON output for two records:
 
 [
   {
-    "IDENTIFIER":"C1",
     "row_id":"N001",
     "RETURN_COMMENT":"Dress arrived late and felt underdressed at event.",
     "Theme 1":"Late delivery",
@@ -58,7 +56,6 @@ Example JSON output for two records:
     "Total_sentiment":1.0
   },
   {
-    "IDENTIFIER":"C2",
     "row_id":"N002",
     "RETURN_COMMENT":"Too large but back ruffles visible from front making appearance awkward",
     "Theme 1":"Awkward appearance",
